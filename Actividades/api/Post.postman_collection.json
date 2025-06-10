@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "c84cd4e0-cceb-4749-bd64-7ddb456a4d63",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45364383"
+	},
+	"item": [
+		{
+			"name": "POST SLIM",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Juana\",\r\n  \"edad\": 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.8.113/api/public/persona",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"8",
+						"113"
+					],
+					"path": [
+						"api",
+						"public",
+						"persona"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
