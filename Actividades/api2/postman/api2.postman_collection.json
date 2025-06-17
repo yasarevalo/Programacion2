@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "5815bdef-d1a5-4031-ae12-e7d4ab50815c",
+		"name": "api2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45364383"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Dylan\",\r\n  \"edad\": 23\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.8.113/api2/public/persona",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"8",
+						"113"
+					],
+					"path": [
+						"api2",
+						"public",
+						"persona"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"edad\": 37\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.8.113/api2/public/persona/Gabriela",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"8",
+						"113"
+					],
+					"path": [
+						"api2",
+						"public",
+						"persona",
+						"Gabriela"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
