@@ -17,7 +17,7 @@ require 'roles.php';
 
 $app = AppFactory::create();
 $app->addBodyParsingMiddleware();
-
+ 
 
 //-------------------------------------------------------
 // RUTA DE LOGIN PARA GENERAR TOKEN (PARA USER O ADMIN)
@@ -51,7 +51,8 @@ $header = $request->getHeaderLine('Authorization');
     }
 
     // Generar token JWT
-    $key = "your_secret_key";      
+
+    $key = "Yasminarevalo2005";      
     $payload = [
         "iss" => "example.com",
         "aud" => "example.com",
@@ -72,7 +73,7 @@ $header = $request->getHeaderLine('Authorization');
 
 // Middleware JWT
 $app->add(new JwtAuthentication([
-    "secret" => "your_secret_key",
+    "secret" => "Yasminarevalo2005",
     "attribute" => "token",
     "path" => ["/"],
     "ignore" => ["/api-chipana/public/login"],
