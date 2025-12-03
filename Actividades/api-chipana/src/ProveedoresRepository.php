@@ -20,7 +20,7 @@ class ProveedoresRepository {
     $maxIdRow = $stmt->fetch(\PDO::FETCH_ASSOC);
     $nuevoId = ($maxIdRow['max_id'] ?? 0) + 1;
 
-    $stmt = $this->pdo->prepare("EXEC spu_crear_proveedores @id_proveedor =:id_proveedor, @nombre = :nombre, @telefono = :telefono, @email = :email, @direccion = :direccion");
+    $stmt = $this->pdo->prepare("EXEC spu_crear_proveedor @id_proveedor =:id_proveedor, @nombre = :nombre, @telefono = :telefono, @email = :email, @direccion = :direccion");
 
     $stmt->bindParam(':id_proveedor', $nuevoId);
     $stmt->bindParam(':nombre', $data['nombre']);
